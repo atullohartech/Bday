@@ -1,0 +1,2028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Rutvi & Rutuja 💗</title>
+
+<style>
+/* =================================
+   PINK NEON THEME
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --pink: #ff1493;
+    --hot-pink: #ff4db8;
+    --light-pink: #ffb6e6;
+    --purple: #b026ff;
+    --dark: #160015;
+    --white: #fff5fc;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--dark);
+    color: var(--white);
+    font-family: "Segoe UI", Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+/* Background glow */
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.28;
+    pointer-events: none;
+    z-index: 0;
+}
+
+body::before {
+    background: #ff1493;
+    top: -100px;
+    left: -100px;
+}
+
+body::after {
+    background: #b026ff;
+    right: -100px;
+    bottom: -100px;
+}
+
+#floatingHearts {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.floating-heart {
+    position: absolute;
+    bottom: -40px;
+    color: #ff4db8;
+    opacity: 0.45;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-115vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* =================================
+   SECTION NAVIGATION
+================================= */
+
+.page {
+    display: none;
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    min-height: 100vh;
+    padding: 65px 18px 40px;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    animation: fadeIn 0.55s ease both;
+}
+
+.page.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.badge {
+    display: inline-block;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+
+    border: 1px solid #ff4db8;
+    border-radius: 30px;
+
+    background: rgba(255, 20, 147, 0.10);
+    color: #ffb6e6;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.20);
+}
+
+.neon-title {
+    margin: 10px 0;
+    font-size: clamp(34px, 8vw, 72px);
+    line-height: 1.15;
+    font-weight: 900;
+
+    color: #fff5fc;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 12px #ff1493,
+        0 0 30px #ff1493,
+        0 0 55px #b026ff;
+}
+
+.section-title {
+    max-width: 850px;
+    margin: 10px 0 22px;
+
+    color: #ffb6e6;
+    font-size: clamp(27px, 5.5vw, 44px);
+
+    text-shadow:
+        0 0 10px rgba(255, 20, 147, 0.7);
+}
+
+.names {
+    margin: 12px 0;
+    color: #ff80cc;
+    font-size: clamp(25px, 5vw, 38px);
+    text-shadow: 0 0 15px #ff1493;
+}
+
+.subtitle {
+    max-width: 650px;
+    margin: 10px auto 25px;
+
+    color: #f7cce8;
+    font-size: clamp(14px, 2.5vw, 18px);
+    line-height: 1.8;
+}
+
+.big-emoji {
+    font-size: clamp(75px, 16vw, 130px);
+    margin: 10px 0 20px;
+    animation: floatEmoji 2.5s ease-in-out infinite;
+}
+
+@keyframes floatEmoji {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* =================================
+   BUTTONS
+================================= */
+
+.main-button {
+    margin-top: 22px;
+    padding: 15px 25px;
+
+    border: 1px solid #ffb6e6;
+    border-radius: 35px;
+
+    background: linear-gradient(110deg, #ff1493, #b026ff);
+    color: white;
+
+    font-weight: 800;
+    font-size: 15px;
+
+    box-shadow:
+        0 0 10px #ff1493,
+        0 0 25px rgba(255, 20, 147, 0.45);
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.main-button:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow:
+        0 0 15px #ff1493,
+        0 0 35px rgba(255, 20, 147, 0.7);
+}
+
+.small-button,
+.choice-button {
+    margin: 7px;
+    padding: 12px 18px;
+
+    border: 1px solid #ff80cc;
+    border-radius: 25px;
+
+    background: rgba(255, 20, 147, 0.15);
+    color: white;
+    font-weight: 700;
+}
+
+.small-button:hover,
+.choice-button:hover {
+    background: #ff1493;
+}
+
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.pill {
+    padding: 10px 15px;
+    border: 1px solid #ff4db8;
+    border-radius: 25px;
+    background: rgba(255, 20, 147, 0.1);
+}
+
+/* Music control */
+
+#musicButton {
+    position: fixed;
+    z-index: 100;
+    right: 12px;
+    bottom: 12px;
+
+    padding: 11px 15px;
+    border: 1px solid #ff80cc;
+    border-radius: 30px;
+
+    background: rgba(35, 0, 30, 0.95);
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.4);
+}
+
+/* =================================
+   SECTION 2: TWINS
+================================= */
+
+.twin-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+
+    width: 100%;
+    max-width: 850px;
+}
+
+.twin-card {
+    min-width: 0;
+    padding: 25px 18px;
+
+    border: 1px solid rgba(255, 77, 184, 0.6);
+    border-radius: 25px;
+
+    background: rgba(255, 20, 147, 0.07);
+
+    box-shadow:
+        0 0 15px rgba(255, 20, 147, 0.12),
+        inset 0 0 20px rgba(255, 20, 147, 0.04);
+}
+
+.card-emoji {
+    font-size: 55px;
+}
+
+.twin-card h2 {
+    color: #ffb6e6;
+    font-size: 28px;
+}
+
+.twin-card p {
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.nickname {
+    color: #ff80cc;
+    font-weight: 800;
+}
+
+.status {
+    max-width: 230px;
+    margin: 9px auto;
+    padding: 9px;
+
+    border-radius: 25px;
+    background: rgba(255, 20, 147, 0.15);
+    font-size: 13px;
+}
+
+.funny-line {
+    margin-top: 24px;
+    color: #ffb6e6;
+    font-weight: 800;
+}
+
+/* =================================
+   SECTION 3: MESSAGE
+================================= */
+
+#section3 {
+    justify-content: flex-start;
+    padding-top: 65px;
+}
+
+.message-box {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+
+    height: auto;
+    min-height: 150px;
+    flex-shrink: 0;
+
+    margin: 10px auto;
+    padding: 22px;
+
+    border: 1px solid #ff4db8;
+    border-radius: 22px;
+
+    background: rgba(255, 20, 147, 0.07);
+
+    color: #fff0fa;
+    text-align: left;
+    font-size: clamp(14px, 2.2vw, 17px);
+    line-height: 1.9;
+
+    overflow-wrap: anywhere;
+    word-break: normal;
+
+    box-shadow:
+        0 0 20px rgba(255, 20, 147, 0.12);
+}
+
+#typingMessage {
+    margin: 0;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+/* =================================
+   SECTION 4: CHALLENGE
+================================= */
+
+.challenge-box {
+    width: 100%;
+    max-width: 600px;
+    padding: 24px;
+
+    border: 1px solid #ff4db8;
+    border-radius: 25px;
+
+    background: rgba(255, 20, 147, 0.07);
+}
+
+.challenge-box h2 {
+    line-height: 1.6;
+    color: #ffb6e6;
+}
+
+.challenge-result {
+    min-height: 50px;
+    color: #ffc4ed;
+    line-height: 1.7;
+}
+
+/* =================================
+   SECTION 5: ONE-BY-ONE GALLERY
+================================= */
+
+.gallery-frame {
+    position: relative;
+
+    width: 100%;
+    max-width: 430px;
+    min-width: 0;
+
+    padding: 14px;
+
+    border: 1px solid #ff4db8;
+    border-radius: 25px;
+
+    background: rgba(255, 20, 147, 0.07);
+
+    box-shadow:
+        0 0 18px rgba(255, 20, 147, 0.20),
+        0 0 40px rgba(176, 38, 255, 0.08);
+}
+
+.gallery-photo {
+    display: block;
+    width: 100%;
+    height: clamp(230px, 48vh, 420px);
+
+    object-fit: contain;
+    border-radius: 17px;
+
+    background: #26051f;
+}
+
+.gallery-placeholder {
+    display: none;
+    width: 100%;
+    height: clamp(230px, 48vh, 420px);
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 17px;
+    background: linear-gradient(145deg, #6d064d, #321052);
+
+    font-size: 85px;
+}
+
+.photo-caption {
+    padding: 15px 5px 5px;
+}
+
+.photo-caption h2 {
+    margin: 5px 0;
+    color: #ffb6e6;
+    font-size: 28px;
+}
+
+.photo-caption p {
+    margin: 8px 0;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.photo-counter {
+    color: #ff80cc;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.gallery-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.gallery-controls button {
+    min-width: 115px;
+}
+
+.gallery-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 18px 0 5px;
+}
+
+.gallery-dot {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: #7d466a;
+}
+
+.gallery-dot.active {
+    background: #ff4db8;
+    box-shadow: 0 0 12px #ff1493;
+}
+
+/* =================================
+   SECTION 6: CAKE
+================================= */
+
+.cake-area {
+    cursor: pointer;
+    padding: 20px;
+}
+
+.cake {
+    position: relative;
+    width: 220px;
+    margin: 65px auto 20px;
+
+    animation: floatEmoji 2.5s ease-in-out infinite;
+}
+
+.cake-top {
+    height: 35px;
+    border: 4px solid #ffd0ed;
+    border-radius: 50%;
+    background: #ff80cc;
+}
+
+.cake-middle {
+    height: 50px;
+    margin-top: -3px;
+    border-radius: 10px 10px 20px 20px;
+    background: #ff1493;
+    border-bottom: 7px solid #b20a67;
+}
+
+.cake-bottom {
+    height: 55px;
+    margin-top: -2px;
+    border-radius: 10px 10px 18px 18px;
+    background: #d946ef;
+    border-bottom: 7px solid #86198f;
+}
+
+.candle {
+    position: absolute;
+    bottom: 130px;
+    left: calc(50% - 6px);
+
+    width: 12px;
+    height: 40px;
+
+    border-radius: 4px;
+    background: repeating-linear-gradient(
+        45deg,
+        white 0 5px,
+        #ff1493 5px 10px
+    );
+}
+
+.flame {
+    position: absolute;
+    top: -31px;
+    left: -9px;
+    font-size: 25px;
+    animation: flicker 0.5s infinite alternate;
+}
+
+@keyframes flicker {
+    from { transform: scale(0.9) rotate(-5deg); }
+    to { transform: scale(1.1) rotate(5deg); }
+}
+
+#wishMessage {
+    max-width: 600px;
+    min-height: 45px;
+    line-height: 1.8;
+    color: #ffb6e6;
+}
+
+/* =================================
+   SECTION 7: GIFTS
+================================= */
+
+.gift-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin: 25px 0;
+}
+
+.gift-box {
+    width: 115px;
+    min-height: 125px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ffb6e6;
+    border-radius: 20px;
+
+    background: linear-gradient(145deg, #ff1493, #a21caf);
+    color: white;
+
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.3);
+    transition: transform 0.2s;
+}
+
+.gift-box:hover {
+    transform: translateY(-7px) rotate(-3deg);
+}
+
+.gift-box span {
+    font-size: 45px;
+}
+
+.gift-box small {
+    margin-top: 8px;
+    font-weight: 800;
+}
+
+.gift-message {
+    width: 100%;
+    max-width: 600px;
+    min-height: 80px;
+
+    padding: 20px;
+
+    border: 1px solid #ff4db8;
+    border-radius: 20px;
+
+    background: rgba(255, 20, 147, 0.08);
+    color: #ffb6e6;
+    line-height: 1.8;
+}
+
+/* =================================
+   SECTION 8: EARTH
+================================= */
+
+.earth {
+    margin: 15px 0;
+    font-size: clamp(85px, 17vw, 140px);
+    animation: earthSpin 10s linear infinite;
+}
+
+@keyframes earthSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+#section8 .message-box {
+    max-width: 750px;
+}
+
+/* =================================
+   SECTION 9: FINALE
+================================= */
+
+.final-emoji {
+    margin: 20px 0;
+    font-size: clamp(45px, 10vw, 85px);
+    animation: floatEmoji 2s infinite;
+}
+
+.final-message {
+    width: 100%;
+    max-width: 650px;
+
+    margin-top: 15px;
+    padding: 20px;
+
+    border: 1px solid #ff4db8;
+    border-radius: 22px;
+
+    background: rgba(255, 20, 147, 0.07);
+}
+
+.final-message p {
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.final-love {
+    color: #ffb6e6;
+    line-height: 1.5;
+}
+
+#confettiContainer {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.confetti {
+    position: absolute;
+    top: -20px;
+    width: 9px;
+    height: 15px;
+    animation: confettiFall linear forwards;
+}
+
+@keyframes confettiFall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 650px) {
+    .page {
+        padding: 65px 15px 35px;
+    }
+
+    #section1 {
+        justify-content: center;
+    }
+
+    .twin-cards {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+
+    .message-box {
+        padding: 17px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .gallery-frame {
+        max-width: 390px;
+    }
+
+    .gallery-photo,
+    .gallery-placeholder {
+        height: clamp(220px, 42vh, 340px);
+    }
+
+    .gift-box {
+        width: 90px;
+        min-height: 100px;
+    }
+
+    .gift-box span {
+        font-size: 36px;
+    }
+
+    .main-button {
+        max-width: 100%;
+        line-height: 1.5;
+    }
+
+    #musicButton {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* ==================================
+   EXTRA MOBILE-FRIENDLY ADJUSTMENTS
+   ================================== */
+
+/* Keep sections scrollable when their content is taller than the screen. */
+html {
+    width: 100%;
+    overflow-x: clip;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    width: 100%;
+    overflow-x: clip;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    height: auto;
+    padding-left: clamp(12px, 4vw, 24px);
+    padding-right: clamp(12px, 4vw, 24px);
+    overflow-wrap: anywhere;
+}
+
+img,
+button,
+.gallery-frame,
+.message-box,
+.challenge-box,
+.final-message {
+    max-width: 100%;
+}
+
+button {
+    min-height: 44px;
+    touch-action: manipulation;
+}
+
+.twin-card,
+.gallery-frame,
+.message-box,
+.challenge-box,
+.gift-message,
+.final-message {
+    min-width: 0;
+}
+
+@media (max-width: 600px) {
+    .page {
+        min-height: 100vh;
+        min-height: 100dvh;
+        justify-content: flex-start;
+        padding-top: 28px;
+        padding-bottom: 88px;
+    }
+
+    #section1 {
+        justify-content: center;
+    }
+
+    .badge {
+        max-width: 100%;
+        padding: 8px 12px;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .neon-title {
+        font-size: clamp(30px, 9vw, 48px);
+        overflow-wrap: anywhere;
+    }
+
+    .section-title {
+        font-size: clamp(25px, 7vw, 36px);
+    }
+
+    .names {
+        font-size: clamp(24px, 6.5vw, 34px);
+    }
+
+    .subtitle {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .pills {
+        gap: 8px;
+    }
+
+    .pill {
+        max-width: 100%;
+        padding: 9px 11px;
+        font-size: 13px;
+    }
+
+    .main-button {
+        width: auto;
+        max-width: 100%;
+        padding: 13px 18px;
+        line-height: 1.45;
+        white-space: normal;
+    }
+
+    .twin-cards {
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        gap: 14px;
+    }
+
+    .twin-card {
+        padding: 20px 16px;
+    }
+
+    .twin-card h2 {
+        font-size: 25px;
+    }
+
+    #section3 {
+        padding-top: 28px;
+    }
+
+    .message-box,
+    .challenge-box,
+    .final-message {
+        padding: 16px;
+    }
+
+    .gallery-frame {
+        width: 100%;
+        max-width: 430px;
+        padding: 10px;
+    }
+
+    .gallery-photo,
+    .gallery-placeholder {
+        width: 100%;
+        height: clamp(200px, 38svh, 330px);
+        height: clamp(200px, 38dvh, 330px);
+    }
+
+    .photo-caption h2 {
+        font-size: 24px;
+    }
+
+    .gallery-controls {
+        width: 100%;
+        gap: 6px;
+    }
+
+    .gallery-controls button {
+        flex: 1 1 120px;
+        min-width: 0;
+        padding: 11px 12px;
+    }
+
+    .gallery-dots {
+        min-height: 24px;
+        align-items: center;
+    }
+
+    .cake-area {
+        padding: 10px;
+    }
+
+    .cake {
+        width: min(220px, 72vw);
+    }
+
+    .gift-container {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .gift-box {
+        flex: 1 1 85px;
+        width: auto;
+        max-width: 110px;
+        min-height: 100px;
+    }
+
+    .gift-box span {
+        font-size: 35px;
+    }
+
+    #musicButton {
+        right: 10px;
+        bottom: max(10px, env(safe-area-inset-bottom));
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    /* Reduce expensive glow work on smaller devices. */
+    body::before,
+    body::after {
+        width: 200px;
+        height: 200px;
+        filter: blur(70px);
+    }
+}
+
+@media (max-width: 360px) {
+    .page {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .neon-title {
+        font-size: clamp(27px, 8.5vw, 34px);
+    }
+
+    .badge {
+        font-size: 9px;
+    }
+
+    .gallery-controls {
+        flex-direction: column;
+    }
+
+    .gallery-controls button {
+        width: 100%;
+    }
+}
+
+@media (max-height: 650px) and (max-width: 600px) {
+    .page {
+        padding-top: 18px;
+        padding-bottom: 80px;
+    }
+
+    .big-emoji {
+        font-size: 70px;
+        margin: 4px 0 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="floatingHearts"></div>
+
+<!-- Add your MP3 to the music folder -->
+<audio id="birthdayMusic" loop preload="none">
+    <source src="music/zulfein.mpeg" type="audio/mpeg">
+</audio>
+
+<button id="musicButton" type="button" onclick="toggleMusic()">
+    🎵 Play Music
+</button>
+
+<!-- =================================
+     SECTION 1: WELCOME
+================================= -->
+
+<section class="page active" id="section1">
+
+    <div class="badge">💗 A SPECIAL BIRTHDAY SURPRISE 💗</div>
+
+    <div class="big-emoji">👯‍♀️</div>
+
+    <h1 class="neon-title">HAPPY BIRTHDAY</h1>
+
+    <h2 class="names">Rutvi & Rutuja 💖</h2>
+
+    <p class="subtitle">
+        Two beautiful twins, two different personalities,
+        and unlimited Double Trouble! 😂
+    </p>
+
+    <div class="pills">
+        <span class="pill">🐒 Chimpanzee Monkey</span>
+        <span class="pill">😭 Crying Girl</span>
+    </div>
+
+    <button type="button" class="main-button" onclick="nextSection(2)">
+        Start The Madness 🚀
+    </button>
+
+</section>
+
+
+<!-- =================================
+     SECTION 2: MEET THE TWINS
+================================= -->
+
+<section class="page" id="section2">
+
+    <div class="badge">👯 DOUBLE TROUBLE</div>
+
+    <h1 class="section-title">Meet The Birthday Queens!</h1>
+
+    <div class="twin-cards">
+
+        <div class="twin-card">
+            <div class="card-emoji">🐒</div>
+            <h2>Rutvi</h2>
+            <p class="nickname">Chimpanzee Monkey 😂</p>
+
+            <p>
+                Quiet and silent most of the time...
+                until her legendary spanking mode activates! 🤣
+            </p>
+
+            <div class="status">🔇 Silent Mode</div>
+            <div class="status">👋 Spanking Mode</div>
+        </div>
+
+        <div class="twin-card">
+            <div class="card-emoji">😭</div>
+            <h2>Rutuja</h2>
+            <p class="nickname">Crying Girl 😂</p>
+
+            <p>
+                Innocent face, brave heart, clever mind...
+                but one little joke and she's sulking! 😆
+            </p>
+
+            <div class="status">😇 Innocent Mode</div>
+            <div class="status">🥺 Sulking Mode</div>
+        </div>
+
+    </div>
+
+    <p class="funny-line">
+        Same birthday. Different drama. Double headache! 💀
+    </p>
+
+    <button class="main-button" onclick="nextSection(3)">
+        Read Your Birthday Message 💌
+    </button>
+
+</section>
+
+
+<!-- =================================
+     SECTION 3: BIRTHDAY MESSAGE
+================================= -->
+
+<section class="page" id="section3">
+
+    <div class="badge">💌 A MESSAGE FROM THE HEART</div>
+
+    <h1 class="section-title">For My Favourite Twins 💗</h1>
+
+    <div class="message-box">
+        <p id="typingMessage"></p>
+    </div>
+
+    <button class="main-button" onclick="nextSection(4)">
+        Next Surprise ✨
+    </button>
+
+</section>
+
+
+<!-- =================================
+     SECTION 4: TWIN CHALLENGE
+================================= -->
+
+<section class="page" id="section4">
+
+    <div class="badge">🎮 TWIN CHALLENGE</div>
+
+    <h1 class="section-title">Who Is More Likely To...? 😂</h1>
+
+    <p class="subtitle">
+        Pick the twin who matches each question!
+    </p>
+
+    <div class="challenge-box">
+
+        <h2 id="challengeQuestion">Loading challenge...</h2>
+
+        <div>
+            <button class="choice-button" onclick="answerChallenge('Rutvi')">
+                🐒 Rutvi
+            </button>
+
+            <button class="choice-button" onclick="answerChallenge('Rutuja')">
+                😭 Rutuja
+            </button>
+        </div>
+
+        <p id="challengeResult" class="challenge-result"></p>
+
+        <button class="small-button" onclick="nextQuestion()">
+            Next Question ➜
+        </button>
+
+    </div>
+
+    <button class="main-button" onclick="nextSection(5)">
+        See Your Photos 📸
+    </button>
+
+</section>
+
+
+<!-- =================================
+     SECTION 5: ONE PHOTO AT A TIME
+================================= -->
+
+<section class="page" id="section5">
+
+    <div class="badge">📸 OUR BEAUTIFUL MEMORIES</div>
+
+    <h1 class="section-title">The Birthday Queens 👑</h1>
+
+    <p class="subtitle">
+        Three photos. Three memories. Unlimited madness! 💗
+    </p>
+
+    <div class="gallery-frame">
+
+        <!-- Only ONE photo is displayed at a time -->
+        <img
+            id="galleryPhoto"
+            class="gallery-photo"
+            src="images/rutvi.jpg"
+            alt="Rutvi"
+        >
+
+        <div id="galleryPlaceholder" class="gallery-placeholder">
+            🐒
+        </div>
+
+        <div class="photo-caption">
+
+            <div id="photoCounter" class="photo-counter">
+                PHOTO 1 OF 3
+            </div>
+
+            <h2 id="photoName">Rutvi</h2>
+
+            <p id="photoNickname" class="nickname">
+                🐒 Chimpanzee Monkey
+            </p>
+
+            <p id="photoDescription">
+                🔇 Silent Mode | 👋 Spanking Mode
+            </p>
+
+        </div>
+
+    </div>
+
+    <div id="galleryDots" class="gallery-dots">
+
+    <button
+        class="gallery-dot active"
+        aria-label="Photo 1"
+        onclick="selectPhoto(0)">
+    </button>
+
+    <button
+        class="gallery-dot"
+        aria-label="Photo 2"
+        onclick="selectPhoto(1)">
+    </button>
+
+    <button
+        class="gallery-dot"
+        aria-label="Photo 3"
+        onclick="selectPhoto(2)">
+    </button>
+
+</div>
+
+    <div class="gallery-controls">
+
+        <button class="small-button" onclick="previousPhoto()">
+            ⬅ Previous
+        </button>
+
+        <button class="small-button" onclick="nextPhoto()">
+            Next Photo ➡
+        </button>
+
+    </div>
+
+    <p class="subtitle">
+        Use Next Photo to see each picture separately.
+    </p>
+
+    <button class="main-button" onclick="nextSection(6)">
+        Time For Cake 🎂
+    </button>
+
+</section>
+
+
+<!-- =================================
+     SECTION 6: BIRTHDAY CAKE
+================================= -->
+
+<section class="page" id="section6">
+
+    <div class="badge">🎂 MAKE A WISH</div>
+
+    <h1 class="section-title">One Cake. Two Queens!</h1>
+
+    <p class="subtitle">
+        Tap the cake and make a birthday wish! ✨
+    </p>
+
+    <div class="cake-area" onclick="makeWish()">
+
+        <div class="cake">
+
+            <div class="candle">
+                <div class="flame" id="flame">🔥</div>
+            </div>
+
+            <div class="cake-top"></div>
+            <div class="cake-middle"></div>
+            <div class="cake-bottom"></div>
+
+        </div>
+
+        <p>👆 TAP THE CAKE 👆</p>
+
+    </div>
+
+    <p id="wishMessage"></p>
+
+    <button class="main-button" onclick="nextSection(7)">
+        Open Your Gifts 🎁
+    </button>
+
+</section>
+
+
+<!-- =================================
+     SECTION 7: GIFT SURPRISE
+================================= -->
+
+<section class="page" id="section7">
+
+    <div class="badge">🎁 BIRTHDAY GIFTS</div>
+
+    <h1 class="section-title">Choose Your Surprise!</h1>
+
+    <p class="subtitle">
+        Choose a box and discover your gift! 😂
+    </p>
+
+    <div class="gift-container">
+
+        <button class="gift-box" onclick="openGift(0)">
+            <span>🎁</span>
+            <small>Gift 1</small>
+        </button>
+
+        <button class="gift-box" onclick="openGift(1)">
+            <span>🎁</span>
+            <small>Gift 2</small>
+        </button>
+
+        <button class="gift-box" onclick="openGift(2)">
+            <span>🎁</span>
+            <small>Gift 3</small>
+        </button>
+
+    </div>
+
+    <div id="giftMessage" class="gift-message">
+        Your surprise is waiting! 💗
+    </div>
+
+    <button class="main-button" onclick="nextSection(8)">
+        One Last Message 🌎
+    </button>
+
+</section>
+
+
+<!-- =================================
+     SECTION 8: EARTH
+================================= -->
+
+<section class="page" id="section8">
+
+    <div class="badge">🌎 FRIENDSHIP & MEMORIES</div>
+
+    <h1 class="section-title">Two Stars In One Universe 💗</h1>
+
+    <div class="earth">🌎</div>
+
+    <div class="message-box">
+        <p>
+            No matter where life takes you, always keep smiling
+            and believing in yourselves.
+
+            <br><br>
+
+            Rutvi, keep being your wonderfully quiet and funny self.
+            And Rutuja, keep being your clever, brave, and adorable self.
+
+            <br><br>
+
+            Your personalities are different, but together you create
+            something truly special.
+
+            <br><br>
+
+            May this new year of your lives bring happiness, success,
+            good health, beautiful memories, and endless laughter.
+
+            <br><br>
+
+            Happy Birthday to my favourite Double Trouble! 👯‍♀️💗
+        </p>
+    </div>
+
+    <button class="main-button" onclick="nextSection(9)">
+        Launch The Grand Finale 🎆
+    </button>
+
+</section>
+
+
+<!-- =================================
+     SECTION 9: GRAND FINALE
+================================= -->
+
+<section class="page" id="section9">
+
+    <div id="confettiContainer"></div>
+
+    <div class="badge">🎆 THE GRAND FINALE 🎆</div>
+
+    <div class="final-emoji">🎂💗🎉💗🎂</div>
+
+    <h1 class="neon-title">HAPPY BIRTHDAY!</h1>
+
+    <h2 class="names">Rutvi & Rutuja 👑</h2>
+
+    <div class="final-message">
+
+        <p>💗 To my wonderful birthday twins!</p>
+
+        <p>😂 Keep laughing, teasing, and making memories.</p>
+
+        <p>✨ May all your dreams come true.</p>
+
+        <p>🎂 Stay happy, healthy, and awesome!</p>
+
+        <p>👯‍♀️ Forever my favourite Double Trouble!</p>
+
+    </div>
+
+    <h2 class="final-love">
+        Lots of love and unlimited drama! ❤️
+    </h2>
+
+    <button class="main-button" onclick="restartWebsite()">
+        🔄 Replay The Madness
+    </button>
+
+</section>
+
+
+<script>
+"use strict";
+
+/* =================================
+   SECTION NAVIGATION
+================================= */
+
+let currentSection = 1;
+
+function nextSection(number) {
+    const target = document.getElementById("section" + number);
+
+    if (!target) {
+        console.error("Missing section: section" + number);
+        return;
+    }
+
+    // Check the current section before updating currentSection.
+    if (currentSection === 5 && number !== 5) {
+        stopAutoSlide();
+    }
+
+    document.querySelectorAll(".page").forEach(function(section) {
+        section.classList.remove("active");
+    });
+
+    target.classList.add("active");
+    currentSection = number;
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+    if (number === 3) {
+        startTypingMessage();
+    }
+
+    if (number === 5) {
+        showPhoto(photoIndex);
+        startAutoSlide();
+    }
+
+    if (number === 9) {
+        startConfetti();
+    }
+}
+
+
+/* =================================
+   BACKGROUND MUSIC
+================================= */
+
+const music = document.getElementById("birthdayMusic");
+const musicButton = document.getElementById("musicButton");
+
+async function toggleMusic() {
+
+    if (music.paused) {
+        try {
+            await music.play();
+            musicButton.textContent = "🔊 Music On";
+        } catch (error) {
+            musicButton.textContent = "▶ Try Music Again";
+            alert(
+                "Music could not start. Make sure " +
+                "music/birthday-song.mp3 exists."
+            );
+        }
+    } else {
+        music.pause();
+        musicButton.textContent = "🔇 Music Off";
+    }
+}
+
+// Try playing after the visitor first interacts with the website.
+document.addEventListener("pointerdown", function firstInteraction() {
+
+    if (music.paused) {
+        music.play()
+            .then(function() {
+                musicButton.textContent = "🔊 Music On";
+            })
+            .catch(function() {
+                musicButton.textContent = "🎵 Play Music";
+            });
+    }
+
+}, { once: true });
+
+
+/* =================================
+   FLOATING HEARTS
+================================= */
+
+const heartsContainer = document.getElementById("floatingHearts");
+
+function createFloatingHeart() {
+
+    const heart = document.createElement("span");
+
+    heart.className = "floating-heart";
+    heart.textContent = ["💗", "💕", "💖", "💘"][
+        Math.floor(Math.random() * 4)
+    ];
+
+    heart.style.left = Math.random() * 100 + "%";
+    heart.style.fontSize = (14 + Math.random() * 18) + "px";
+    heart.style.animationDuration = (7 + Math.random() * 5) + "s";
+
+    heartsContainer.appendChild(heart);
+
+    heart.addEventListener("animationend", function() {
+        heart.remove();
+    });
+}
+
+setInterval(createFloatingHeart, 900);
+
+
+/* =================================
+   SECTION 3: TYPING MESSAGE
+================================= */
+
+const birthdayMessage = `Happy Birthday, Rutvi and Rutuja! 🎂💗
+
+Today is all about celebrating two amazing people who bring happiness, laughter, and madness into the world.
+
+Rutvi, my favourite Chimpanzee Monkey 🐒 — you may be quiet most of the time, but your legendary spanking mode is always ready! 😂
+
+Rutuja, my adorable Crying Girl 😭 — you have an innocent face, a brave heart, and a clever mind. But one little joke and you enter sulking mode! 🤣
+
+You two are different in so many ways, but together you make the perfect combination of fun, drama, laughter, and unforgettable memories.
+
+May your birthdays bring you endless happiness, good health, success, love, and everything you have been wishing for.
+
+Never stop smiling, never stop being yourselves, and never stop making everyone around you laugh.
+
+Happy Birthday to my favourite Double Trouble! 👯‍♀️💖
+
+Keep shining, keep laughing, and enjoy your special day to the fullest! 🎉`;
+
+let typingTimer = null;
+
+function startTypingMessage() {
+
+    const element = document.getElementById("typingMessage");
+
+    clearTimeout(typingTimer);
+    element.textContent = "";
+
+    let index = 0;
+
+    function typeNext() {
+
+        if (!document.getElementById("section3").classList.contains("active")) {
+            return;
+        }
+
+        if (index < birthdayMessage.length) {
+            element.textContent += birthdayMessage.charAt(index);
+            index++;
+
+            typingTimer = setTimeout(typeNext, 16);
+        }
+    }
+
+    typeNext();
+}
+
+
+/* =================================
+   SECTION 4: TWIN CHALLENGE
+================================= */
+
+const questions = [
+    {
+        question: "Who is more likely to stay quiet?",
+        answer: "Rutvi",
+        result: "🐒 Rutvi has activated Silent Mode!"
+    },
+    {
+        question: "Who is more likely to sulk after a joke?",
+        answer: "Rutuja",
+        result: "😭 Rutuja has entered Sulking Mode!"
+    },
+    {
+        question: "Who is clever and full of ideas?",
+        answer: "Rutuja",
+        result: "🧠 Clever Girl Rutuja strikes again!"
+    },
+    {
+        question: "Who is ready to start a playful fight?",
+        answer: "Rutvi",
+        result: "👋 Look out! Rutvi is in Spanking Mode!"
+    },
+    {
+        question: "Who creates the best Double Trouble team?",
+        answer: "Both",
+        result: "👯‍♀️ Both of you are equally responsible!"
+    }
+];
+
+let questionIndex = 0;
+
+function showQuestion() {
+    document.getElementById("challengeQuestion").textContent =
+        questions[questionIndex].question;
+
+    document.getElementById("challengeResult").textContent = "";
+}
+
+function answerChallenge(name) {
+
+    const question = questions[questionIndex];
+    const result = document.getElementById("challengeResult");
+
+    if (question.answer === "Both") {
+        result.textContent = question.result;
+    } else if (name === question.answer) {
+        result.textContent = "✅ Correct! " + question.result;
+    } else {
+        result.textContent = "❌ Wrong guess! " + question.result;
+    }
+}
+
+function nextQuestion() {
+    questionIndex = (questionIndex + 1) % questions.length;
+    showQuestion();
+}
+
+showQuestion();
+
+
+/* =================================
+   SECTION 5: PHOTO GALLERY
+   ONE PHOTO AT A TIME
+================================= */
+
+const photos = [
+    {
+        src: "images/rutvi.jpg",
+        name: "Rutvi",
+        nickname: "🐒 Chimpanzee Monkey",
+        description: "🔇 Silent Mode | 👋 Spanking Mode",
+        emoji: "🐒",
+        alt: "Rutvi birthday photo"
+    },
+    {
+        src: "images/rutuja.jpg",
+        name: "Rutuja",
+        nickname: "😭 Crying Girl",
+        description: "😇 Innocent Face | 🥺 Sulking Mode",
+        emoji: "😭",
+        alt: "Rutuja birthday photo"
+    },
+    {
+        src: "images/twin.jpg",
+        name: "Rutvi & Rutuja",
+        nickname: "👑 Double Trouble",
+        description: "👯‍♀️ Two twins, unlimited memories!",
+        emoji: "👯‍♀️",
+        alt: "Rutvi and Rutuja together"
+    }
+];
+
+let photoIndex = 0;
+let autoSlideTimer = null;
+const SLIDE_INTERVAL = 3000; // 3 seconds
+
+const galleryPhoto = document.getElementById("galleryPhoto");
+const galleryPlaceholder = document.getElementById("galleryPlaceholder");
+
+/* =================================
+   PHOTO GALLERY: AUTO + MANUAL SLIDE
+================================= */
+
+function showPhoto(index) {
+    photoIndex = (index + photos.length) % photos.length;
+
+    const photo = photos[photoIndex];
+
+    galleryPhoto.onload = function () {
+        galleryPhoto.style.display = "block";
+        galleryPlaceholder.style.display = "none";
+    };
+
+    galleryPhoto.onerror = function () {
+        galleryPhoto.style.display = "none";
+        galleryPlaceholder.style.display = "flex";
+        galleryPlaceholder.textContent = photo.emoji;
+    };
+
+    galleryPhoto.style.display = "block";
+    galleryPlaceholder.style.display = "none";
+
+    galleryPhoto.src = photo.src;
+    galleryPhoto.alt = photo.alt;
+
+    document.getElementById("photoCounter").textContent =
+        "PHOTO " + (photoIndex + 1) + " OF " + photos.length;
+
+    document.getElementById("photoName").textContent =
+        photo.name;
+
+    document.getElementById("photoNickname").textContent =
+        photo.nickname;
+
+    document.getElementById("photoDescription").textContent =
+        photo.description;
+
+    document.querySelectorAll(".gallery-dot").forEach(function (dot, index) {
+        dot.classList.toggle("active", index === photoIndex);
+    });
+}
+
+
+// Start automatic slideshow
+function startAutoSlide() {
+    stopAutoSlide();
+
+    autoSlideTimer = setInterval(function () {
+        if (document.getElementById("section5").classList.contains("active")) {
+            showPhoto(photoIndex + 1);
+        } else {
+            stopAutoSlide();
+        }
+    }, SLIDE_INTERVAL);
+}
+
+
+// Stop automatic slideshow
+function stopAutoSlide() {
+    if (autoSlideTimer !== null) {
+        clearInterval(autoSlideTimer);
+        autoSlideTimer = null;
+    }
+}
+
+
+// Manual Next button
+function nextPhoto() {
+    showPhoto(photoIndex + 1);
+    startAutoSlide();
+}
+
+
+// Manual Previous button
+function previousPhoto() {
+    showPhoto(photoIndex - 1);
+    startAutoSlide();
+}
+
+
+// Manual photo-dot navigation
+function selectPhoto(index) {
+    showPhoto(index);
+    startAutoSlide();
+}
+
+
+// Display the first photo initially
+showPhoto(0);
+
+
+/* =================================
+   SECTION 6: CAKE
+================================= */
+
+let wishMade = false;
+
+function makeWish() {
+
+    const message = document.getElementById("wishMessage");
+
+    if (wishMade) {
+        message.textContent =
+            "Your birthday wish is already on its way! 💗✨";
+        return;
+    }
+
+    wishMade = true;
+
+    document.getElementById("flame").textContent = "💨";
+
+    message.textContent =
+        "🎉 Wish made! May all your dreams come true, Rutvi and Rutuja! 💗🎂";
+
+    createConfettiBurst();
+}
+
+
+/* =================================
+   SECTION 7: GIFTS
+================================= */
+
+const gifts = [
+    "🐒 Rutvi's gift: One whole day without teasing her... maybe! 😂",
+    "😭 Rutuja's gift: Unlimited tissues for her dramatic moments! 🤣",
+    "👑 Both of you get unlimited happiness, love, success, and memories! 💗"
+];
+
+const openedGifts = new Set();
+
+function openGift(index) {
+
+    const message = document.getElementById("giftMessage");
+
+    if (openedGifts.has(index)) {
+        message.textContent =
+            "You already opened this gift! Try another one. 🎁";
+        return;
+    }
+
+    openedGifts.add(index);
+
+    message.textContent = gifts[index];
+
+    document.querySelectorAll(".gift-box")[index]
+        .querySelector("span").textContent = "🎉";
+
+    createConfettiBurst();
+}
+
+
+/* =================================
+   CONFETTI
+================================= */
+
+function createConfettiBurst() {
+
+    const container = document.getElementById("confettiContainer");
+
+    if (!container) return;
+
+    for (let i = 0; i < 35; i++) {
+
+        const piece = document.createElement("div");
+
+        piece.className = "confetti";
+
+        piece.style.left = Math.random() * 100 + "%";
+
+        piece.style.background = [
+            "#ff1493",
+            "#ff80cc",
+            "#d946ef",
+            "#ffffff",
+            "#ffd700"
+        ][Math.floor(Math.random() * 5)];
+
+        piece.style.animationDuration =
+            (2 + Math.random() * 3) + "s";
+
+        container.appendChild(piece);
+
+        piece.addEventListener("animationend", function() {
+            piece.remove();
+        });
+    }
+}
+
+let confettiTimer = null;
+
+function startConfetti() {
+
+    const container = document.getElementById("confettiContainer");
+
+    clearInterval(confettiTimer);
+    container.innerHTML = "";
+
+    createConfettiBurst();
+
+    let bursts = 0;
+
+    confettiTimer = setInterval(function() {
+
+        if (!document.getElementById("section9").classList.contains("active")) {
+            clearInterval(confettiTimer);
+            return;
+        }
+
+        createConfettiBurst();
+
+        bursts++;
+
+        if (bursts >= 8) {
+            clearInterval(confettiTimer);
+        }
+
+    }, 650);
+}
+
+
+/* =================================
+   RESTART WEBSITE
+================================= */
+
+function restartWebsite() {
+
+    clearTimeout(typingTimer);
+    clearInterval(confettiTimer);
+    stopAutoSlide();
+
+    document.querySelectorAll(".page").forEach(function(section) {
+        section.classList.remove("active");
+    });
+
+    document.getElementById("section1").classList.add("active");
+
+    currentSection = 1;
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+    // Reset birthday message
+    document.getElementById("typingMessage").textContent = "";
+
+    // Reset challenge
+    questionIndex = 0;
+    showQuestion();
+
+    // Reset gallery
+    showPhoto(0);
+
+    // Reset cake
+    wishMade = false;
+    document.getElementById("flame").textContent = "🔥";
+    document.getElementById("wishMessage").textContent = "";
+
+    // Reset gifts
+    openedGifts.clear();
+
+    document.querySelectorAll(".gift-box span").forEach(function(icon) {
+        icon.textContent = "🎁";
+    });
+
+    document.getElementById("giftMessage").textContent =
+        "Your surprise is waiting! 💗";
+
+    document.getElementById("confettiContainer").innerHTML = "";
+}
+</script>
+
+</body>
+</html>
+
